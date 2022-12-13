@@ -17,9 +17,8 @@ describe("Chain API", () => {
   it("fetch tokken by sha256", async () => {
     const response = await api.getTokenBySHA256("dfddb9d6cf44c9a15c672e186248035b782e1bbfdd332352311983c3ab635ca5");
     const json = await response.json();
-    console.log(json);
-    // expect(pool).to.deep.equal(examplePool);
-  }).timeout(2000);
+    expect(response).not.be.undefined;
+}).timeout(2000);
 
   it(
     "fetch payout by currency id and account",

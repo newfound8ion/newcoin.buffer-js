@@ -1,4 +1,4 @@
-import { EosioActionObject, EosioAuthorizationObject } from "types";
+import { EosioActionObject, EosioAuthorizationObject } from "../types";
 
 /* tslint:disable:variable-name */
 

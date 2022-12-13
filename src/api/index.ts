@@ -1,4 +1,4 @@
-import { GetTableRowsPayload } from "interfaces";
+import { GetTableRowsPayload } from "../interfaces";
 
 export class ChainApi {
   readonly nodeos_url: string;
