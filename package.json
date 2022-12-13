@@ -1,0 +1,44 @@
+{
+  "name": "@newfound8ion/newcoin.buffer-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build:npm": "tsc",
+    "build:web": "webpack --config webpack.prod.js",
+    "build": "yarn run build:npm && yarn run build:web",
+    "test": "mocha -r ts-node/register test/**/*.test.ts",
+    "publish": "yarn publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newfound8ion/newcoin.buffer-js.git"
+  },
+  "author": "Artem Maliuga <contact.avm07@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/newfound8ion/newcoin.buffer-js/issues"
+  },
+  "homepage": "https://github.com/newfound8ion/newcoin.buffer-js#readme",
+  "devDependencies": {
+    "@types/chai": "^4.3.4",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^18.11.13",
+    "@types/node-fetch": "^2.6.2",
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "ts-loader": "^9.4.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "yarn": "^1.22.19"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  }
+}
