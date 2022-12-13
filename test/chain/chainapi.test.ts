@@ -1,7 +1,7 @@
 import { doesNotMatch } from "assert";
 import { expect } from "chai";
 import fetch from "node-fetch";
-import { ChainApi } from "api";
+import { ChainApi } from "../../src/api";
 
 // tslint:disable-next-line:no-var-requires
 
